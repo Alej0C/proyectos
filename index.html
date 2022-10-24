@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom-select.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container navbar-content">
             <h1>¿Donde en el mundo?</h1>
             <button class="btn-dark-mode">
-                <i class="fa-regular fa-sun"></i>
                 <i class="fa-regular fa-moon"></i>
                 Modo oscuro
             </button>
@@ -23,12 +25,14 @@
     </nav>
 
     <header class="container filter-content my-2">
-        <form>
-            <input type="text" placeholder="Ingresa un pais">
+        <form class="form-search" id="formulario">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Ingresa un pais" id="inputFormulario">
         </form>
-        <div>
+        <div class="custom-select" style="width:200px;">
             <select>
                 <option value="">Filtrar por region</option>
+                <option value="">Todos</option>
                 <option value="Africa">Africa</option>
                 <option value="Americas">America</option>
                 <option value="Asia">Asia</option>
@@ -38,8 +42,8 @@
         </div>
     </header>
 
-    <main class="container grid">
-        <article class="card"> 
+    <main class="container grid" id="banderas">
+        <article class="card">
             <img src="https://flagcdn.com/de.svg" alt="" class="img-fluid">
             <div class="card-content">
                 <h3>Nombre</h3>
@@ -56,5 +60,9 @@
     </main>
 
     <script src="js/dark-mode.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
+
 </html>
