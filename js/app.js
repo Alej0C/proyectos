@@ -24,6 +24,19 @@ const banderillas = data => {
             <img src="${item.flag}" alt="" class="img-fluid">
             <div class="card-content">
                 <h3>${item.name}</h3>
+                <p>
+                    <b>Population: </b>
+                    ${item.population}
+                </p>
+                <p>
+                    <b>Capital: </b>
+                    ${item.capital}
+                </p>
+                <p>
+                    <b>Región: </b>
+                    ${item.region}
+                </p>
+                <p>
                     <a href="pais.html?name=${item.name}">Más info</a>
                 </p>
             </div>

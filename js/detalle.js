@@ -11,7 +11,7 @@ const fetchData = async () => {
     try {
         const res = await fetch('https://restcountries.com/v2/all')
         const data = await res.json()
-        
+
         const filtroData = data.filter(item => item.name === params)
 
         banderillas(filtroData)
@@ -40,7 +40,7 @@ const banderillas = data => {
                     <b>Región: </b>
                     ${item.region}
                 </p>
-                 <p>
+                     <p>
                     <b>zona horaria: </b>
                     ${item.timezones}
                 </p>
